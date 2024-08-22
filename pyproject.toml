@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "bin-lookup-api"
+version = "0.1.0"
+description = "A FastAPI application for BIN lookup"
+authors = ["Mikel"]
+license = "MIT"
+readme = "README.md"
+#packages = [{include = "bin_lookup_api", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.112.1"
+uvicorn = "^0.30.6"
+orjson = "^3.10.7"
+avl-range-tree = "^0.4.0"
+python-dotenv = "^1.0.1"
+redis = "^5.0.8"
+loguru = "^0.7.2"
+pydantic-settings = "^2.4.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
